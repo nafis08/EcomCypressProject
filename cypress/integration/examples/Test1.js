@@ -1,6 +1,6 @@
 //Cypress - Spec
 ///<reference types= "Cypress"/>
-import "cypress-real-events"
+//import "cypress-real-events"
 describe('My first test case', function(){
     Cypress.on('uncaught:exception', (err, runnable) => {
         return false
@@ -19,6 +19,10 @@ describe('My first test case', function(){
             if(item.includes('Cauliflower')){
                 cy.wrap($el).find('button').click();
             }
+        })
+
+        cy.get('.brand').then(function(logo){
+            cy.log(logo.text());
         })
     })
 })
