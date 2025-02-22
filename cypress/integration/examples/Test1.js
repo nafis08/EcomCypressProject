@@ -21,8 +21,10 @@ describe('My first test case', function(){
             }
         })
 
+        cy.get('.brand').should('have.text', 'GREENKART')
+
         cy.get('.brand').then(function(logo){
-            cy.log(logo.text());
+           cy.log(logo.text());
         })
     })
 })
