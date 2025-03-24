@@ -1,12 +1,24 @@
 ///<reference types = "Cypress"/>
 
 describe("E-com E2E test", function(){
+    before(function(){
+        //Test
+        Cypress.config('defaultCommandTimeout', 6000)
+
+        cy.fixture("userdata.json").then(function(data){
+            this.data = data;
+        cy.visit("https://rahulshettyacademy.com/loginpagePractise/#");
+        cy.get("#username").type(this.data.username);
+        cy.get("#password").type(this.data.password);
+    
+        })
+
+    })
     it("Place order", function(){
 
+        //Cypress.config('defaultCommandTimeout', 20000) //this cannot effect the "it" block as it is not loaded during the cypress instruction sync
+
         const productName = "iphone X";
-        cy.visit("https://rahulshettyacademy.com/loginpagePractise/#");
-        cy.get("#username").type("rahulshettyacademy");
-        cy.get("#password").type("learning");
         cy.get(".radiotextsty").eq(0).click();
         cy.get("#terms").check();
         cy.get("#signInBtn").click();
@@ -51,9 +63,9 @@ describe("E-com E2E test", function(){
 
         cy.contains('button', 'Checkout').click();
         cy.get('#country').type("Bangladesh");
-        cy.wait(3000);
+        cy.wait(5000);
         cy.get('.suggestions ul li a').click();
-        cy.get('.btn-success').click();
+        cy.get('.btn-success').click();//flaky
         cy.get('.alert-success').should('contain', 'Success');
         
 
