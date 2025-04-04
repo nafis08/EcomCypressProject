@@ -17,6 +17,7 @@ module.exports = defineConfig({
   },
 
   video: true,
+  projectId: "8cw8r2", //for cypress cloud
 
 
 });
