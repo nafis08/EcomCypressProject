@@ -12,8 +12,9 @@ describe("E-com E2E test", function(){
         cy.fixture("userdata.json").then(function(data){
             this.data = data;
 
+            
             const homePage = new HomePage();
-            homePage.goTo("https://rahulshettyacademy.com/loginpagePractise/#");
+            homePage.goTo(Cypress.env('url')+ "/loginpagePractise/#");
             homePage.login(this.data.username, this.data.password);
         })
 
@@ -38,7 +39,7 @@ describe("E-com E2E test", function(){
 
         const checkoutPage = new CheckoutPage();
         checkoutPage.paymentProceed();
-        checkoutPage.getAlert(); 
+        checkoutPage.getAlert().should('contain', 'Success');; 
         
 
     })

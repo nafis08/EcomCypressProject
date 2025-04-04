@@ -2,7 +2,7 @@
 
 describe("New tab handling in cypress", () =>{
     it("Manipulate new tab via Jquery ", () => {
-        cy.visit("https://rahulshettyacademy.com/AutomationPractice/");
+        cy.visit(Cypress.env('url')+"/AutomationPractice/");
         cy.get('#opentab').invoke('removeAttr', 'target').click();
         cy.origin("https://www.qaclickacademy.com/", () => {
             cy.get("#navbarSupportedContent a[href*='about']").click();
