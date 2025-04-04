@@ -6,7 +6,7 @@ describe('My first test case', function(){
         return false
         });
     it('My first test case', function(){
-        cy.visit("https://rahulshettyacademy.com/seleniumPractise/#/");
+        cy.visit(Cypress.env('url')+"/seleniumPractise/#/");
         cy.get('.search-keyword').type("ca").type("{Enter}");
         cy.wait(2000)
         cy.get('.product').should('be.visible', 4);

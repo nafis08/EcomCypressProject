@@ -10,7 +10,7 @@ describe("Calender", function(){
         const date = "15";
         const monthNumber = "6";
         const expectedList = [monthNumber, date, year];
-        cy.visit("https://rahulshettyacademy.com/seleniumPractise/#/offers");
+        cy.visit(Cypress.env('url')+"seleniumPractise/#/offers");
         cy.get(".react-date-picker__inputGroup").click();
         cy.get(".react-calendar__navigation__label").click();
         cy.get(".react-calendar__navigation__label").click();
