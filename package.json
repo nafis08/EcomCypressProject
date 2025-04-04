@@ -13,7 +13,8 @@
   "license": "ISC",
   "devDependencies": {
     "cypress": "^14.2.0",
-    "cypress-iframe": "^1.0.1"
+    "cypress-iframe": "^1.0.1",
+    "cypress-mochawesome-reporter": "^3.8.2"
   },
   "dependencies": {
     "aggregate-error": "^3.1.0",
