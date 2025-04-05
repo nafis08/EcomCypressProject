@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test_e2e": "npx cypress run ",
+    "cloud_run_smoke": "npx cypress run npx --record --key 24769f78-5aa5-49f2-ad7e-401089aec37d --spec cypress/integration/SmokeTestEcom/*.js --browser chrome ",
+    "cloud_run_learn": "npx cypress run npx --record --key 24769f78-5aa5-49f2-ad7e-401089aec37d --spec cypress/integration/LearningTests/*.js --browser chrome "
   },
   "repository": {
     "type": "git",
