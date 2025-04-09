@@ -21,14 +21,12 @@ describe("E-com E2E test", function(){
     })
     it("Place order", function(){
 
-        //Cypress.config('defaultCommandTimeout', 20000) //this cannot effect the "it" block as it is not loaded during the cypress instruction sync
-
-        const productName = "iphone X";        
+        //Cypress.config('defaultCommandTimeout', 20000) //this cannot effect the "it" block as it is not loaded during the cypress instruction sync   
         
         const productPage = new ProductPage();
         productPage.verifyProductPage();
         productPage.productCount().should('have.length', 4)
-        productPage.productSelection(productName);
+        productPage.productSelection(this.data.productName);
         productPage.addProduct();
 
         const cartPage = new CartPage();
@@ -39,7 +37,7 @@ describe("E-com E2E test", function(){
 
         const checkoutPage = new CheckoutPage();
         checkoutPage.paymentProceed();
-        checkoutPage.getAlert().should('contain', 'Success');; 
+        checkoutPage.getAlert().should('contain', 'Success'); 
         
 
     })
