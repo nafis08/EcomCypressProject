@@ -1,0 +1,305 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "end-to-end-ecommerece-validation;ecommerce-product-order",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Ecommerce product order",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am on Ecommerce Page",
+            "match": {
+              "location": "cypress/integration/BDD/ecom/ecomStepDef.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 943000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I login to the website",
+            "match": {
+              "location": "cypress/integration/BDD/ecom/ecomStepDef.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5607000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I add items to cart and checkout",
+            "match": {
+              "location": "cypress/integration/BDD/ecom/ecomStepDef.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 650000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I validate the total price",
+            "match": {
+              "location": "cypress/integration/BDD/ecom/ecomStepDef.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 328000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I select the country submit and verify Thank you",
+            "match": {
+              "location": "cypress/integration/BDD/ecom/ecomStepDef.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5528000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Smoke",
+            "line": 2
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "end-to-end-ecommerece-validation;ecommerce-product-order-2",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Ecommerce product order 2",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I am on Ecommerce Page",
+            "match": {
+              "location": "cypress/integration/BDD/ecom/ecomStepDef.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 526000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "username",
+                      "password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "rahulshettyacademy",
+                      "learning"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I login to the web portal with username and password",
+            "match": {
+              "location": "cypress/integration/BDD/ecom/ecomStepDef.js:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3224000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I add items to cart and checkout",
+            "match": {
+              "location": "cypress/integration/BDD/ecom/ecomStepDef.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 597000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I validate the total price",
+            "match": {
+              "location": "cypress/integration/BDD/ecom/ecomStepDef.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 326000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "I select the country submit and verify Thank you",
+            "match": {
+              "location": "cypress/integration/BDD/ecom/ecomStepDef.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5572000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 10
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "end-to-end-ecommerece-validation;ecommerce-specific-product-order",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Ecommerce specific product order",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 21,
+            "name": "I am on Ecommerce Page",
+            "match": {
+              "location": "cypress/integration/BDD/ecom/ecomStepDef.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 566000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "username",
+                      "password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "rahulshettyacademy",
+                      "learning"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 22,
+            "name": "I login to the web portal with username and password",
+            "match": {
+              "location": "cypress/integration/BDD/ecom/ecomStepDef.js:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3144000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "productName"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "iphone X"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 25,
+            "name": "I add specific item to cart and checkout",
+            "match": {
+              "location": "cypress/integration/BDD/ecom/ecomStepDef.js:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 158000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "I validate the total price",
+            "match": {
+              "location": "cypress/integration/BDD/ecom/ecomStepDef.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 267000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "I select the country submit and verify Thank you",
+            "match": {
+              "location": "cypress/integration/BDD/ecom/ecomStepDef.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5519000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Smoke",
+            "line": 19
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "end-to-end-ecommerece-validation",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "End to End Ecommerece validation",
+    "tags": [],
+    "uri": "cypress/integration/BDD/ecom.feature"
+  }
+]

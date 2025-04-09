@@ -7,6 +7,12 @@
     "cloud_run_smoke": "npx cypress run npx --record --key 24769f78-5aa5-49f2-ad7e-401089aec37d --spec cypress/integration/SmokeTestEcom/*.js --browser chrome ",
     "cloud_run_learn": "npx cypress run npx --record --key 24769f78-5aa5-49f2-ad7e-401089aec37d --spec cypress/integration/LearningTests/*.js --browser chrome "
   },
+  "cypress-cucumber-preprocessor": {
+    "json": {
+      "enabled": true,
+      "output": "cypress/cucmberReports/results.json"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "EcomCypressPorj"
@@ -14,12 +20,14 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^14.2.0",
+    "@badeball/cypress-cucumber-preprocessor": "^22.0.1",
+    "cypress": "^14.3.0",
     "cypress-iframe": "^1.0.1",
-    "cypress-mochawesome-reporter": "^3.8.2"
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "multiple-cucumber-html-reporter": "^3.9.2"
   },
   "dependencies": {
-    "@badeball/cypress-cucumber-preprocessor": "^22.0.1",
+    "@cypress/browserify-preprocessor": "latest",
     "aggregate-error": "^3.1.0",
     "ansi-colors": "^4.1.3",
     "ansi-escapes": "^4.3.2",
