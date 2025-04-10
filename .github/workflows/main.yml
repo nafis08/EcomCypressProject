@@ -9,11 +9,11 @@ on:
 
   workflow_dispatch:
 
-  jobs:
-    build:
-     runs-on: macos-latest
+jobs:
+  build:
+    runs-on: macos-latest
 
-     steps:
-       - uses: actions/checkout@v3
-       - name: Run a one-line script
-         run: echo Hello
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run a one-line script
+        run: echo Hello
