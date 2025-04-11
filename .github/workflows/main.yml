@@ -26,5 +26,6 @@ jobs:
       - name: Install Cypress binary
         run: npx cypress install
       
-      - run: npm run test_e2e
+      - name: Test run
+        run: npm run cloud_run_test_e2e
 
