@@ -26,7 +26,7 @@ jobs:
       - name: Run Cypress tests
         uses: cypress-io/github-action@v6
         with:
-          build: npm run build
-          start: npm start
+          #build: npm run build
+          #start: npm start
       - run: npm run test_e2e
 
