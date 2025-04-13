@@ -7,7 +7,7 @@ on:
     branches: [ main ]
   workflow_dispatch:
   schedule:
-    - cron: '0 17 * * *'
+    - cron: '0 23 * * *'
 
 jobs:
   cypress-run:
@@ -29,5 +29,8 @@ jobs:
         run: npx cypress install
       
       - name: Test run
-        run: npm run sorry_cypress_test_e2e
+        run: 
+          export CYPRESS_API_URL=http://localhost:1234
+          export CYPRESS_RECORD_KEY=24769f78-5aa5-49f2-ad7e-401089aec37d
+          npm run sorry_cypress_test_e2e
 
