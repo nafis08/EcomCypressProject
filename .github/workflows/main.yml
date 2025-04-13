@@ -27,5 +27,5 @@ jobs:
         run: npx cypress install
       
       - name: Test run
-        run: npm run cloud_run_test_e2e
+        run: npm run sorry_cypress_test_e2e
 
